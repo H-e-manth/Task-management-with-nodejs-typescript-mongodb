@@ -55,7 +55,7 @@ A **Task Management System** built with **Node.js**, **TypeScript**, and **Mongo
    
 5.The API will be running at http://localhost:3000.
 
-###Technologies Used
+Technologies Used
 
 > Node.js: JavaScript runtime environment
 > TypeScript: Typed superset of JavaScript
@@ -66,14 +66,14 @@ A **Task Management System** built with **Node.js**, **TypeScript**, and **Mongo
 > ESLint: Linting utility for JavaScript/TypeScript
 > Prettier: Code formatting tool
 
-###API Endpoints
+API Endpoints
 
-##Authentication
+Authentication
 
 POST /api/auth/signup: Register a new user
 POST /api/auth/login: Authenticate and get a token
 
-##Tasks
+Tasks
 
 GET /api/tasks: Get all tasks (with optional filters and pagination)
 POST /api/tasks: Create a new task
@@ -82,7 +82,7 @@ DELETE /api/tasks/:id: Delete a task
 PATCH /api/tasks/:id/complete: Mark a task as completed
 
 
-##Example Request
+Example Request
  ```bash
 POST /api/tasks
 Content-Type: application/json
