@@ -10,6 +10,7 @@ A **Task Management System** built with **Node.js**, **TypeScript**, and **Mongo
 - [Project Structure](#project-structure)
 - [API Endpoints](#api-endpoints)
 - [Usage](#usage)
+- [Testing](#testing)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -32,7 +33,20 @@ A **Task Management System** built with **Node.js**, **TypeScript**, and **Mongo
 
 ### Steps
 
-1. Clone the repository:
+1. Navigate to the project directory:
 
    ```bash
-   git clone https://github.com/yourusername/Task-management-with-nodejs-typescript-mongodb.git
+   cd Task-management-with-nodejs-typescript-mongodb
+
+2.Install the dependencies:
+
+  ```bash
+ npm install
+
+
+PORT=3000
+MONGODB_URI=mongodb://localhost:27017/taskdb
+JWT_SECRET=your_jwt_secret
+
+
+npm run dev
