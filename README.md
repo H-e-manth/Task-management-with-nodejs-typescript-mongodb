@@ -38,15 +38,66 @@ A **Task Management System** built with **Node.js**, **TypeScript**, and **Mongo
    ```bash
    cd Task-management-with-nodejs-typescript-mongodb
 
-2.Install the dependencies:
+2. Install the dependencies::
 
-  ```bash
- npm install
+   ```bash
+   npm install
+
+3. Create a .env file in the root directory and configure your environment variables:
+
+   ```bash
+   PORT=3000 /n MONGODB_URI=mongodb://localhost:27017/taskdb /n JWT_SECRET=your_jwt_secret
+
+4. Start the server:
+
+   ```bash
+   npm run dev
+   
+5.The API will be running at http://localhost:3000.
+
+###Technologies Used
+
+> Node.js: JavaScript runtime environment
+> TypeScript: Typed superset of JavaScript
+> Express.js: Web framework for Node.js
+> MongoDB: NoSQL database for data storage
+> Mongoose: ODM (Object Data Modeling) library for MongoDB and Node.js
+> JWT: JSON Web Tokens for authentication
+> ESLint: Linting utility for JavaScript/TypeScript
+> Prettier: Code formatting tool
+
+###API Endpoints
+
+##Authentication
+
+POST /api/auth/signup: Register a new user
+POST /api/auth/login: Authenticate and get a token
+
+##Tasks
+
+GET /api/tasks: Get all tasks (with optional filters and pagination)
+POST /api/tasks: Create a new task
+PUT /api/tasks/:id: Update a task
+DELETE /api/tasks/:id: Delete a task
+PATCH /api/tasks/:id/complete: Mark a task as completed
 
 
-PORT=3000
-MONGODB_URI=mongodb://localhost:27017/taskdb
-JWT_SECRET=your_jwt_secret
+##Example Request
+ ```bash
+POST /api/tasks
+Content-Type: application/json
+Authorization: Bearer <token>
+
+{
+  "title": "Finish the report",
+  "description": "Complete the quarterly financial report",
+  "priority": "High",
+  "dueDate": "2024-10-10"
+}
 
 
-npm run dev
+
+
+
+
+
